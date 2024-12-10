@@ -1,0 +1,110 @@
+/* judul atas */
+.title {
+    text-align: center;  /* Pusatkan teks menjadi ditengah */
+}
+
+h1 {
+    font-size: 3rem;  /* Ukuran font besar */
+    color: #FF4E88 ; /* Warna pink */
+    margin: 0;/* Margin dihilangkan */
+    box-shadow: #FF5AAC;
+}
+
+span {
+    font-size: 3rem;
+    color: #FF8C9E;
+    margin: 0;
+    box-shadow: #FF5AAC;
+    width: 60%;
+}
+
+h2 {
+    font-size: 3rem;  /* Ukuran font besar */
+    color: #EB3678; /* Warna pink lebih terang */
+    margin: 0;  /* Margin dihilangkan */
+}
+
+h3 {
+    font-size: 1.5rem; /* Ukuran font sedang */
+    color: white; /* Warna teks putih */
+    text-align: center; /* font berada ditengah */
+}
+
+/* Styling container form */
+.form-container {
+    max-width: 500px; /* Lebar maksimal 500px */
+    width: 60%; /* Lebar 60% dari layar */
+    background-image: linear-gradient(#E73879, #FF5AAC, #FFA6CA); /* Gradasi warna latar */
+    margin: 50px auto; /* Jarak atas-bawah 50px, tengah horizontal */
+    padding: 50px; /* Padding di dalam kontainer */
+    border-radius: 50px; /* Sudut melingkar */
+}
+
+/* Header form */
+.form-header {
+    margin-bottom: 30px; /* Jarak antar grup input */
+    color: white; /* Warna label putih */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 30px; /* Jarak antar grup input */
+    color: white; /* Warna label putih */
+}
+
+.form-group label {
+    display: flex; /* Tampilkan label dalam baris */
+    margin-bottom: 5px; /* Jarak bawah 5px */
+    font-weight: bold; /* Font tebal */
+}
+
+.form-group input,
+.form-group select {
+    width: 100%; /* Lebar penuh */
+    padding: 10px; /* Padding dalam input */
+    border: 1px solid #ccc; /* Border abu-abu */
+    border-radius: 5px; /* Sudut melingkar */
+}
+
+/* Button styling */
+.form-action button {
+    color: white; /* Warna teks putih */
+    display: inline-block; /* Tampilkan dalam baris */
+    background-color: #ffffff; /* Warna latar putih */
+    border: none; /* Tanpa border */
+    padding: 10px 20px; /* Padding atas-bawah 10px, kiri-kanan 20px */
+    border-radius: 5px; /* Sudut melingkar */
+    background-image: linear-gradient(#E73879, #FF5AAC); /* Gradasi warna */
+    font-weight: bold; /* Font tebal */
+    cursor: pointer; /* Pointer berubah menjadi tangan saat hover */
+    transition: background-color 0.3s ease; /* Animasi perubahan warna */
+}
+
+.form-action button:hover {
+    background-color: #ffe4eb; /* Warna berubah saat hover */
+}
+
+/* Styling tabel produk */
+.product-table {
+    border-collapse: collapse; /* Hapus jarak antar sel */
+    width: 80%; /* Lebar tabel 80% */
+    margin: 0 auto; /* Tengah horizontal */
+    text-align: center; /* Teks rata tengah */
+    font-family: Arial, sans-serif; /* Font tabel */
+    color: white; /* Warna teks putih */
+}
+
+.product-table th,
+.product-table td {
+    border: 1px solid black; /* Border hitam */
+    padding: 10px; /* Padding dalam sel */
+}
+
+.product-table th {
+    background-color: #FF4E88 ; /* Warna latar pink terang */
+    font-weight: bold; /* Font tebal */
+}
+
+#isi-data {
+    color: #FF4E88; /* Warna pink */
+}

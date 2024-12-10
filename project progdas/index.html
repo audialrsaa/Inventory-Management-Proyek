@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inventory Control</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Audia <span>Larasati</span></h1>
+        <h2>X PPLG 5</h2>
+    </div>
+
+    <!-- Form untuk input data produk -->
+    <div class="form-container">
+        <!-- Header form -->
+        <div class="form-header">
+            <h3>Form Produk</h3> <!-- Judul form -->
+        </div>
+
+        <div class="form-group">
+            <label for="kode-produk">Kode Produk</label>
+            <input type="text" id="kode-produk" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="nama-produk">Nama Produk</label>
+            <input type="text" id="nama-produk">
+        </div>
+        
+        <div class="form-group">
+            <label for="harga-produk">Harga Produk</label>
+            <input type="number" id="harga-produk">
+        </div>
+        
+        <div class="form-group">
+            <label for="satuan-produk">Satuan</label>
+            <select id="satuan-produk">
+                <option value="Pcs">Pcs</option>
+                <option value="Pack">Pack</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="kategori-produk">Kategori</label>
+            <select id="kategori-produk">
+                <option value="Minuman">Minuman</option>
+                <option value="Makanan Ringan">Makanan Ringan</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="url-gambar">URL Gambar</label>
+            <input type="text" id="url-gambar">
+        </div>
+
+        <div class="form-group">
+            <label for="stok-awal">Stok Awal</label>
+            <input type="number" id="stok-awal">
+        </div>
+        
+        <div class="form-action">
+            <button id="tombol-submit" onclick="menyimpanProduk()">Submit</button>
+        </div>
+    </div>
+
+    <br><br>
+    
+    <!-- Tabel untuk menampilkan data produk -->
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Nomor</th>
+                <th>Kode Produk</th>
+                <th>Nama Produk</th>
+                <th>Harga Produk</th>
+                <th>Satuan</th>
+                <th>Kategori</th>
+                <th>Gambar Produk</th>
+                <th>Stok Produk</th>
+                <th>Modify</th>
+            </tr>
+        </thead>
+        <tbody id="isi-data">
+            <!-- Data produk akan ditambahkan melalui JavaScript -->
+        </tbody>
+    </table>
+    
+    <script src="main.js"></script>
+</body>
+</html>
